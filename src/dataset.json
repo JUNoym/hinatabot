@@ -1,0 +1,400 @@
+{
+    "init": {
+        "answers": [
+            {
+                "content": "PCを選びたい",
+                "nextId": "select_pc"
+            },
+            {
+                "content": "スマホを選びたい",
+                "nextId": "go_others"
+            },
+            {
+                "content": "その他",
+                "nextId": "others"
+            }
+        ],
+        "question": "ご用件はなんだ？"
+    },
+    "select_pc": {
+        "answers": [
+            {
+                "content": "MAC",
+                "nextId": "select_mac"
+            },
+            {
+                "content": "Windows",
+                "nextId": "select-windows"
+            },
+            {
+                "content": "問い合わせる",
+                "nextId": "contact"
+            }
+        ],
+        "question": "使いたいOSはなんだ？"
+    },
+    "go_others": {
+        "answers": [
+            {
+                "content": "ググる",
+                "nextId": "https://www.google.com/"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            },
+            {
+                "content": "苦情を入れる",
+                "nextId": "contact"
+            }
+        ],
+        "question": "スマホについてはまだよくわかんないぞ"
+    },
+    "select_mac": {
+        "answers": [
+            {
+                "content": "プログラミング",
+                "nextId": "select_price_for_mac"
+            },
+            {
+                "content": "動画編集",
+                "nextId": "select_price_for_mac"
+            },
+            {
+                "content": "ゲーム",
+                "nextId": "recommend-windows"
+            },
+            {
+                "content": "その他",
+                "nextId": "others"
+            }
+        ],
+        "question": "PCは何に使うんだ？"
+    },
+    "select_price_for_mac": {
+        "answers": [
+            {
+                "content": "〜9万",
+                "nextId": "recommend_used_pc"
+            },
+            {
+                "content": "10万〜20万",
+                "nextId": "recommend_pc10_20_mac"
+            },
+            {
+                "content": "25万〜50万",
+                "nextId": "recommend_pc25_50_mac"
+            },
+            {
+                "content": "いくらでも出せる",
+                "nextId": "recommend_pc50_"
+            }
+        ],
+        "question": "いくらまで出せるんだ？"
+    },
+    "recommend_pc10_20_mac": {
+        "answers": [
+            {
+                "content": "商品ページに行く",
+                "nextId": "https://www.apple.com/jp/macbook-air/"
+            },
+            {
+                "content": "その他",
+                "nextId": "others"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "これ！"
+    },
+    "recommend_pc25_50_mac": {
+        "answers": [
+            {
+                "content": "商品ページに行く",
+                "nextId": "https://www.apple.com/jp/macbook-pro-16/"
+            },
+            {
+                "content": "その他",
+                "nextId": "others"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "これ！"
+    },
+    "recommend_pc50_": {
+        "answers": [
+            {
+                "content": "商品ページに行く",
+                "nextId": "https://www.apple.com/jp/mac-pro/"
+            },
+            {
+                "content": "その他",
+                "nextId": "others"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "これ！"
+    },
+    "recommend_used_pc": {
+        "answers": [
+            {
+                "content": "メルカリで探す",
+                "nextId": "https://www.mercari.com/jp"
+            },
+            {
+                "content": "ヤフオクで探す",
+                "nextId": "https://auctions.yahoo.co.jp/"
+            },
+            {
+                "content": "バイトを探す",
+                "nextId": "https://townwork.net/?&vos=evtwgsr0001x0000001&utm_source=google&utm_medium=cpc&utm_campaign=search_big&gclid=CjwKCAiAnIT9BRAmEiwANaoE1T6euVtrwtKu3aXu1p4Xqw8zcwm11-6kIkhR_ct7yaAodt4X5etA7xoCircQAvD_BwE"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "中古ならワンチャン買えるゾ！"
+    },
+    "recommend-windows": {
+        "answers": [
+            {
+                "content": "じゃあWindowsにする",
+                "nextId": "select-windows"
+            },
+            {
+                "content": "その他",
+                "nextId": "others"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "ゲームをするならWindowsの方がいいぞ！"
+    },
+    "select-windows": {
+        "answers": [
+            {
+                "content": "プログラミング",
+                "nextId": "select_price_for_programming"
+            },
+            {
+                "content": "ゲーム",
+                "nextId": "select_home_built_pc_for_game"
+            },
+            {
+                "content": "動画編集",
+                "nextId": "select_home_built_pc_for_video_editing"
+            }
+        ],
+        "question": "PCは何に使うんだ？"
+    },
+    "select_price_for_programming": {
+        "answers": [
+            {
+                "content": "〜３万",
+                "nextId": "recommend_job"
+            },
+            {
+                "content": "7万〜１０万",
+                "nextId": "recommend_pc7_10"
+            },
+            {
+                "content": "10万〜20万",
+                "nextId": "recommend_pc10_20"
+            },
+            {
+                "content": "いくらでも出せる",
+                "nextId": "recommend_pc20_"
+            }
+        ],
+        "question": "いくらまで出せるんだ？"
+    },
+    "recommend_pc7_10": {
+        "answers": [
+            {
+                "content": "商品ページに行く",
+                "nextId": "https://www.mouse-jp.co.jp/m-book/x4/#x4-i7"
+            },
+            {
+                "content": "その他",
+                "nextId": "others"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "これ！"
+    },
+    "recommend_pc10_20": {
+        "answers": [
+            {
+                "content": "商品ページに行く",
+                "nextId": "https://atrrd.valuecommerce.com/resolve/62ead86c548?u=https%3A%2F%2Fvcentry3.valuecommerce.ne.jp%2Fcgi-bin%2Fcustom%2Fmod01%2Fentry.php%3FITRACK_INFO%3D088442430102680394201019201221%26COOKIE_PATH%3D%2Fcgi-bin%2Fc0000218%2F%26COOKIE_DOMAIN%3D.valuecommerce.ne.jp%26VIEW_URL%3Dhttp%253A%252F%252Fshopap.lenovo.com%252Fjp%252Ftablets%252Fthinkpad%252Fthinkpad-helix%252F%26REFERRER%3DaHR0cHM6Ly93d3cueXJwYy5vcmcvZG91Z2EtaGVuc2h1dS1ub3RlcGMvJUU1JThCJTk1JUU3JTk0JUJCJUU3JUI3JUE4JUU5JTlCJTg2JUUzJTgxJUFCJUUzJTgxJThBJUUzJTgxJTk5JUUzJTgxJTk5JUUzJTgyJTgxJUUzJTgxJUFFJUUzJTgzJThFJUUzJTgzJUJDJUUzJTgzJTg4JUUzJTgzJTkxJUUzJTgyJUJEJUUzJTgyJUIzJUUzJTgzJUIzLw%26COOKIE_EXPIRES%3DFri%2C%252018%2520Dec%25202020%252020%3A12%3A21%2520GMT%26vs%3D3136158%26vp%3D884424301%26vc_url%3Dhttps%253A%252F%252Fwww.lenovo.com%252Fjp%252Fja%252Fnotebooks%252Flegion-laptops%252Flegion-y-series%252FLenovo-Legion-Y540-15%252Fp%252F81SY005TJP%253Fcid%253Djp%253Aaffiliate%253Adsry7f%26vcptn%3DAAABdUJ9yLdyodyA0oEnt8Ve%26_v%3D1&iti=088442430102680394201019201221&ct=1603138341047&ref=https%3A%2F%2Fwww.yrpc.org%2Fdouga-henshuu-notepc%2F%25E5%258B%2595%25E7%2594%25BB%25E7%25B7%25A8%25E9%259B%2586%25E3%2581%25AB%25E3%2581%258A%25E3%2581%2599%25E3%2581%2599%25E3%2582%2581%25E3%2581%25AE%25E3%2583%258E%25E3%2583%25BC%25E3%2583%2588%25E3%2583%2591%25E3%2582%25BD%25E3%2582%25B3%25E3%2583%25B3%2F&mid=218&cid=AAABdUJ9yLdyodyA0oEnt8Ve&_v=1&vf=iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW%2FAAAAMElEQVQYV2NkFGP4H1eWxKBTsoKBsaqg6L96Dh%2BD%2FJl3DIx5B1b8ZxC6wBCv18EAAPinDTmGTBt9AAAAAElFTkSuQmCC&pl=kWa44j1eJNlY5BSo9z4ofjb75PaK4Vpjt3Q9cUVlOrXTAxw63UYOKES5jfzmkflIAkNzl998tp7ppfAaZ6m1CdC5MQjGejuTDRNziCvTDfWrJpjB8TeQCGUPm8LKfAaZ4pAJZ7OQuyPBB2SCXw2SCXC_J4yy2XCxUC541jlS7spjt3Q9cUVlOrXTAxw63UYOKES5jfzmkflIAkNzl998tp7ppfAaZ6m1CdC5MQjGejuTDRNziCvTDfWrJpjB8TeQCGUPm8LKfAaZ4nqKxUC54naTcnmcnfRZPTKBSLfYSIaSI6KUMnGWpwoNSUC56MnGW87gq1HACVc7J_IpH3eYBSfeLaD.SAuXjodUW2RdZVjq01BSk4jVB4Y.NA1cKFb4WDK2tbtKEp4i_VdZVjq.kl1BNr5xj6Knrgy4TIvRSwQ5BSp05BNlVnuqw37lYIT3Svp.mVbSOPgNof4.L9.gJ0Nc1lF4XVA4.JgJ0BBe_XV4v9WL90ftctDL90ftctDL9.JmFA4.9O74XV4L9.TmrRvw0Bpitrv_zUVRE_uy.BdK"
+            },
+            {
+                "content": "その他",
+                "nextId": "others"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "これ！"
+    },
+    "recommend_pc20_": {
+        "answers": [
+            {
+                "content": "商品ページに行く",
+                "nextId": "https://www.apple.com/jp/shop/buy-mac/mac-pro/rack#"
+            },
+            {
+                "content": "その他",
+                "nextId": "others"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "これ！"
+    },
+    "select_home_built_pc_for_game": {
+        "answers": [
+            {
+                "content": "はい",
+                "nextId": "recommend_amazon"
+            },
+            {
+                "content": "いいえ",
+                "nextId": "recommend_ps5"
+            },
+            {
+                "content": "問い合わせる",
+                "nextId": "contact"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "自作PCは作れるのか？"
+    },
+    "recommend_ps5": {
+        "answers": [
+            {
+                "content": "買う",
+                "nextId": "https://www.playstation.com/ja-jp/ps5/"
+            },
+            {
+                "content": "いいえ",
+                "nextId": "recommend_ps5"
+            },
+            {
+                "content": "問い合わせる",
+                "nextId": "contact"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "PS5でも買っとけ！"
+    },
+    "select_home_built_pc_for_video_editing": {
+        "answers": [
+            {
+                "content": "はい",
+                "nextId": "recommend_amazon"
+            },
+            {
+                "content": "いいえ",
+                "nextId": "select_price_for_edit"
+            },
+            {
+                "content": "問い合わせる",
+                "nextId": "contact"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "自作PCは作れるのか？"
+    },
+    "select_price_for_edit": {
+        "answers": [
+            {
+                "content": "〜３万",
+                "nextId": "recommend_job"
+            },
+            {
+                "content": "7万〜１０万",
+                "nextId": "recommend_pc7_10"
+            },
+            {
+                "content": "10万〜20万",
+                "nextId": "recommend_pc10_20"
+            },
+            {
+                "content": "いくらでも出せる",
+                "nextId": "recommend_pc20_"
+            }
+        ],
+        "question": "いくらまで出せるんだ？"
+    },
+    "recommend_amazon": {
+        "answers": [
+            {
+                "content": "Amazonに飛ぶ",
+                "nextId": "https://www.amazon.co.jp/"
+            },
+            {
+                "content": "問い合わせる",
+                "nextId": "contact"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "Amazonでお好きに自作パーツを買ってくれ！"
+    },
+    "recommend_job": {
+        "answers": [
+            {
+                "content": "バイトを探す",
+                "nextId": "https://townwork.net/?&vos=evtwgsr0001x0000001&utm_source=google&utm_medium=cpc&utm_campaign=search_big&gclid=CjwKCAiAnIT9BRAmEiwANaoE1T6euVtrwtKu3aXu1p4Xqw8zcwm11-6kIkhR_ct7yaAodt4X5etA7xoCircQAvD_BwE"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "働け！"
+    },
+    "others": {
+        "answers": [
+            {
+                "content": "問い合わせる",
+                "nextId": "contact"
+            },
+            {
+                "content": "最初の質問に戻る",
+                "nextId": "init"
+            }
+        ],
+        "question": "なんかあれば教えろよ！"
+    }
+}
