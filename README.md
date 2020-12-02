@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# 適当にPCを勧めてくるチャットボット
+アプリのURL：https://hinatabot-15508.web.app/
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
