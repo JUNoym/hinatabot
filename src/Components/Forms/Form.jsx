@@ -46,7 +46,7 @@ export default class Form extends React.Component {
                 + '【問い合わせ内容】\n' + description
         };
 
-        const url = "https://hooks.slack.com/services/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"             //urlを載せると通知が来なくなるので載せてません
+        const url = "*******************"  //urlを載せると通知が来なくなるので載せてません
 
         fetch(url, {
             method: "POST",
