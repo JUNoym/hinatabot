@@ -4,8 +4,8 @@ import { db } from '../firebase/index'
 import { AnswersList, Chats, Loading } from '../Components/index'
 import Form from "../Components/Forms/Form";
 import { useDispatch, useSelector } from 'react-redux';
-import { signInAction } from '../reducks/users/actions';
-import { getUserId } from "../reducks/users/selectors"
+import { getUserId, getUsername } from "../reducks/users/selectors"
+import { signOut } from "../reducks/users/operations";
 
 
 const Home = () => {
@@ -104,13 +104,19 @@ const Home = () => {
         }
     });
 
+    const dispatch = useDispatch()
     const selector = useSelector(state => state)
     const uid = getUserId(selector)
+    const username = getUsername(selector)
+
 
 
     return (
 
         <section className="main">
+            <button onClick={() => dispatch(signOut())}>サインアウト</button>
+            <p>ユーザーId: {uid}</p>
+            <p>ユーザー名: {username}</p>
             <div className="main-box">
 
                 {(Object.keys(dataset).length === 0) ? (
@@ -123,7 +129,7 @@ const Home = () => {
                     )}
                 <Form open={open} handleOpen={handleOpen} handleClose={handleClose} />
             </div>
-        </section>
+        </section >
     )
 }
 

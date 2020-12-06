@@ -3,7 +3,6 @@ import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import TextInput from "./TextInput";
 
@@ -47,7 +46,7 @@ export default class Form extends React.Component {
                 + '【問い合わせ内容】\n' + description
         };
 
-        const url = ""             //urlを載せると通知が来なくなるので載せてません
+        const url = "https://hooks.slack.com/services/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"             //urlを載せると通知が来なくなるので載せてません
 
         fetch(url, {
             method: "POST",
