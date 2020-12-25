@@ -59,10 +59,15 @@ const SignUp = () => {
                     onClick={() => dispatch(signUp(username, email, password, confirmPassword))}
                 />
             </div>
+            <div className="center">
+                <PrimaryButton
+                    label={"ログインはこちら"}
+                    onClick={() => dispatch(push("/signin"))}
+                />
+            </div>
 
-            <button onClick={() => dispatch(push("/signin"))}>既にアカウントをお持ちの方はこちら</button>
 
-        </div>
+        </div >
     )
 }
 

@@ -6,6 +6,7 @@ import Form from "../Components/Forms/Form";
 import { useDispatch, useSelector } from 'react-redux';
 import { getUserId, getUsername } from "../reducks/users/selectors"
 import { signOut } from "../reducks/users/operations";
+import { TextInput, PrimaryButton } from "../Components/UIkit/index"
 
 
 const Home = () => {
@@ -113,10 +114,14 @@ const Home = () => {
 
     return (
 
-        <section className="main">
-            <button onClick={() => dispatch(signOut())}>サインアウト</button>
-            <p>ユーザーId: {uid}</p>
-            <p>ユーザー名: {username}</p>
+        <section className="">
+            <div className="display-id">
+                <PrimaryButton
+                    label={"ログアウト"}
+                    onClick={() => dispatch(signOut())}>
+                </PrimaryButton>
+            </div>
+
             <div className="main-box">
 
                 {(Object.keys(dataset).length === 0) ? (

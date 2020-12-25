@@ -38,7 +38,13 @@ const ResetPass = () => {
                     onClick={() => dispatch(Reset(email))}
                 />
             </div>
-            <button onClick={() => dispatch(push("/signin"))}>ログイン画面にもどる</button>
+            <div className="center">
+                <PrimaryButton
+                    label={"ログイン画面に戻る"}
+                    onClick={() => dispatch(push("/signin"))}
+                />
+            </div>
+
 
 
         </div>

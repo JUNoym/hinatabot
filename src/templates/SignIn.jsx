@@ -41,11 +41,17 @@ const SignIn = () => {
             <div className="module-spacer--medium" />
             <div className="center">
                 <PrimaryButton
-                    label={"Sign In"}
+                    label={"ログイン"}
                     onClick={() => dispatch(signIn(email, password))}
                 />
             </div>
-            <button onClick={() => dispatch(push("/signup"))}>アカウント登録はこちら</button>
+            <div className="center">
+                <PrimaryButton
+                    label={"アカウント登録はこちら"}
+                    onClick={() => dispatch(push("/signup"))}
+                />
+            </div>
+
             <div className="module-spacer--extra-extra-small" />
             <button onClick={() => dispatch(push("/signin/reset"))} > パスワードを忘れた方はこちら</button>
 
