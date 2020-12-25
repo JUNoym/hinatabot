@@ -46,7 +46,7 @@ export default class Form extends React.Component {
                 + '【問い合わせ内容】\n' + description
         };
 
-        const url = "*****"  //urlを載せると通知が来なくなるので載せてません
+        // const url = "******"  //urlを載せると通知が来なくなるので載せてません
 
         fetch(url, {
             method: "POST",
